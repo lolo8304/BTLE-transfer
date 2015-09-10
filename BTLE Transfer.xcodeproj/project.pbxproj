@@ -25,7 +25,9 @@
 		B9F9163915D5806500B3B398 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F9163815D5806500B3B398 /* ViewController.m */; };
 		B9F9164115D5808200B3B398 /* BTLECentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F9164015D5808200B3B398 /* BTLECentralViewController.m */; };
 		B9F9164415D5808F00B3B398 /* BTLEPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F9164315D5808F00B3B398 /* BTLEPeripheralViewController.m */; };
+		E1742C6F1BA1BB2D00AE470B /* BTLEPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = E1742C6E1BA1BB2D00AE470B /* BTLEPeripheral.m */; };
 		E1922B0E1B7B8F0A000AB589 /* TransferService.m in Sources */ = {isa = PBXBuildFile; fileRef = E1922B0D1B7B8F0A000AB589 /* TransferService.m */; };
+		E1E612861BA21C8800822683 /* BTLECentral.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E612851BA21C8800822683 /* BTLECentral.m */; };
 		E1FCADAF1B7E42EB0089750D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1FCADAE1B7E42EA0089750D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +60,11 @@
 		B9F9164215D5808F00B3B398 /* BTLEPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEPeripheralViewController.h; sourceTree = "<group>"; };
 		B9F9164315D5808F00B3B398 /* BTLEPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEPeripheralViewController.m; sourceTree = "<group>"; };
 		B9F9164715D583E500B3B398 /* TransferService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferService.h; sourceTree = "<group>"; };
+		E1742C6E1BA1BB2D00AE470B /* BTLEPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEPeripheral.m; sourceTree = "<group>"; };
+		E1742C701BA1BB5000AE470B /* BTLEPeripheral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLEPeripheral.h; sourceTree = "<group>"; };
 		E1922B0D1B7B8F0A000AB589 /* TransferService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferService.m; sourceTree = "<group>"; };
+		E1E612841BA21C1900822683 /* BTLECentral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLECentral.h; sourceTree = "<group>"; };
+		E1E612851BA21C8800822683 /* BTLECentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLECentral.m; sourceTree = "<group>"; };
 		E1FCADAE1B7E42EA0089750D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,12 +117,11 @@
 				B9F9162815D5806400B3B398 /* AppDelegate.h */,
 				B9F9162915D5806400B3B398 /* AppDelegate.m */,
 				B9F9163115D5806500B3B398 /* MainStoryboard_iPhone.storyboard */,
-				B9F9163715D5806500B3B398 /* ViewController.h */,
-				B9F9163815D5806500B3B398 /* ViewController.m */,
-				B9F9163F15D5808200B3B398 /* BTLECentralViewController.h */,
-				B9F9164015D5808200B3B398 /* BTLECentralViewController.m */,
-				B9F9164215D5808F00B3B398 /* BTLEPeripheralViewController.h */,
-				B9F9164315D5808F00B3B398 /* BTLEPeripheralViewController.m */,
+				E1742C701BA1BB5000AE470B /* BTLEPeripheral.h */,
+				E1742C6E1BA1BB2D00AE470B /* BTLEPeripheral.m */,
+				E1E612841BA21C1900822683 /* BTLECentral.h */,
+				E1E612851BA21C8800822683 /* BTLECentral.m */,
+				E1742C6D1BA1B89600AE470B /* Controller */,
 				B9F9164715D583E500B3B398 /* TransferService.h */,
 				E1922B0D1B7B8F0A000AB589 /* TransferService.m */,
 				E1FCADAE1B7E42EA0089750D /* Images.xcassets */,
@@ -143,6 +148,19 @@
 				B9F9162715D5806400B3B398 /* BTLE Transfer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1742C6D1BA1B89600AE470B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9F9163715D5806500B3B398 /* ViewController.h */,
+				B9F9163815D5806500B3B398 /* ViewController.m */,
+				B9F9163F15D5808200B3B398 /* BTLECentralViewController.h */,
+				B9F9164015D5808200B3B398 /* BTLECentralViewController.m */,
+				B9F9164215D5808F00B3B398 /* BTLEPeripheralViewController.h */,
+				B9F9164315D5808F00B3B398 /* BTLEPeripheralViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E612861BA21C8800822683 /* BTLECentral.m in Sources */,
 				B9F9162615D5806400B3B398 /* main.m in Sources */,
+				E1742C6F1BA1BB2D00AE470B /* BTLEPeripheral.m in Sources */,
 				B9F9162A15D5806400B3B398 /* AppDelegate.m in Sources */,
 				B9F9163915D5806500B3B398 /* ViewController.m in Sources */,
 				B9F9164115D5808200B3B398 /* BTLECentralViewController.m in Sources */,
