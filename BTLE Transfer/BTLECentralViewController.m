@@ -123,7 +123,7 @@
     }
     
     // Reject if the signal strength is too low to be close enough (Close is around -22dB)
-    if (RSSI < -2700) {
+    if (RSSI < -270) {
         return false;
     }
     return true;
